@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const yargs = require('yargs');
 const secrets = require('./src/secrets');
 const config = require('./src/config')

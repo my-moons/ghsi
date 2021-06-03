@@ -2,10 +2,9 @@
   "name": "gh-secrets-importer",
   "version": "1.0.0",
   "description": "Secrets importer for github actions",
-  "main": "index.js",
   "author": "Juan Pablo Corona",
   "license": "ISC",
-  "private": true,
+  "bin": "index.js",
   "dependencies": {
     "axios": "^0.21.1",
     "dotenv": "^10.0.0",
