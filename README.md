@@ -3,7 +3,7 @@ This cli loads a `.env` file to github repository secrets section with an enviro
 
 ### Installation
 ```
-$ yarn add gh-secrets-importer`
+$ npm i -g gh-secrets-importer`
 ```
 ### Getting started
 You must create a GitHub Personal Access Token
