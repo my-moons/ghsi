@@ -2,7 +2,6 @@ const axios = require('axios').default;
 
 const updateGithubSecret = async ({repository, secretName, secretValue, keyId}) => {
   try {
-    const token = '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';
     const url = `https://api.github.com/repos/my-moons/${repository}/actions/secrets/${secretName}`;
     const res = await axios.put(
       url,
@@ -10,7 +9,7 @@ const updateGithubSecret = async ({repository, secretName, secretValue, keyId}) 
       {
         headers: {
           'Accept': 'application/vnd.github.v3+json',
-          'Authorization': `Bearer ${token}`,
+          'Authorization': `Bearer ${process.env.GITHUB_TOKEN}`,
         },
       }
     );
@@ -24,13 +23,12 @@ const updateGithubSecret = async ({repository, secretName, secretValue, keyId}) 
 
 const getGithubPublicKeys = async (repoName) => {
   try {
-    const token = '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';
     const res = await axios.get(
       `https://api.github.com/repos/my-moons/${repoName}/actions/secrets/public-key`,
       {
         headers: {
           'Accept': 'application/vnd.github.v3+json',
-          'Authorization': `Bearer ${token}`
+          'Authorization': `Bearer ${process.env.GITHUB_TOKEN}`
         },
       }
     );
