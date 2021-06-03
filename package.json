@@ -1,0 +1,17 @@
+{
+  "name": "gh-secrets-importer",
+  "version": "1.0.0",
+  "description": "Secrets importer for github actions",
+  "main": "index.js",
+  "author": "Juan Pablo Corona",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
+    "js-yaml": "^4.1.0",
+    "tweetnacl": "^1.0.3",
+    "tweetsodium": "^0.0.5",
+    "yargs": "^17.0.0-candidate.13"
+  }
+}
