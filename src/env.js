@@ -1,5 +1,7 @@
 
 const readDotEnvValues = (src = '') => {
+    console.log('reading from:', process.cwd())
+    process.chdir(process.cwd())
     const {parsed} = require('dotenv').config({
         path: src === '' ? null : src
     });

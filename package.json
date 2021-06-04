@@ -1,6 +1,6 @@
 {
   "name": "gh-secrets-importer",
-  "version": "1.0.4",
+  "version": "1.0.8",
   "description": "Secrets importer for github actions",
   "author": "Juan Pablo Corona",
   "license": "ISC",

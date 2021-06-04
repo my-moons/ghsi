@@ -4,7 +4,7 @@ const yargs = require('yargs');
 const secrets = require('./src/secrets');
 const config = require('./src/config')
 
-yargs.version('1.0.0');
+yargs.version(require('./package.json').version);
 
 yargs.command({
     command: 'import',
