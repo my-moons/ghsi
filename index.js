@@ -30,7 +30,7 @@ yargs.command({
         }
     },
     handler(argv) {
-        if (!['dev', 'stag'].includes(argv.environment)) {
+        if (!['dev', 'stag', 'prod'].includes(argv.environment)) {
             console.log('Envmironment not valid! Must be dev or stag', )
             return
         }
